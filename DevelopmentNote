@@ -1,0 +1,16 @@
+CSC 106 Development Note:
+
+[Mar.25.2016]
+
+While implementing the Graph ADT, encountered a critical problem - that is
+I cannot use single Node class to represent both Vertex and Edges.
+If you do, we have a problem in connecting the edges together, and the reference
+pointers when connecting edges become cyclic. Thus, we are diving into two classes
+Vertex - Edges
+And we are going to let each vertex have an Edges array to keep track of its own edges
+and edges will keep track of where it is going to.
+
+This idea is credited to http://stackoverflow.com/questions/17480022/java-find-shortest-path-between-2-points-in-a-distance-weighted-map.
+
+ADT Graph source: http://support.csis.pace.edu/CSISWeb/docs/techReports/techReport224.pdf
+// Update:: Graph ADT is up and running. (~3 hours)
